@@ -7,18 +7,29 @@
   padding: 0;
   display: table-cell;
   vertical-align: middle;
-  
+}
+#container2 {
+  color: white;
+  background: #ffbd17;
+  width: 400px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#content {
+ 
+  flex: 0 0 27vw;
 }
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-
+  height: 86vh;
 }
 .container-fluid{
-  height: 90vh;
+  height: 86vh;
 }
 .txt-btn{
   color: rgb(255, 255, 255);
@@ -32,19 +43,21 @@
   font-size: 12px;
   font-weight: 700;
 }
-.bt-group{
-   margin-top: 10vh;
-}
+
 .cd2button{
   background: rgb(255, 255, 255);
   height: 52px;
   width: 154px;
   border-radius: 0;
+  border: 1px solid #fff!important;
+  margin: 0 auto;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .txt{
     color: rgb(213, 196, 85);
-    text-align: center;
     margin-top: 10%;
     font-family: 'poppins';
     font-size: 16px;
@@ -57,13 +70,12 @@
     font-family: 'poppins';
     font-size: 80px;
     font-weight: 700;
-    text-align: center;
-    margin-top: 5vh;
+    line-height: 1.2;
   }
   .bg{
     background-attachment: scroll;
     background-clip: border-box;
-    background-color: rgb(213, 196, 85);
+    background-color: #fff;
     background-image: none;
     background-origin: padding-box;
     background-position-x: 0%;
