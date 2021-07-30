@@ -1,0 +1,68 @@
+.cd1button{
+    background: rgb(213, 196, 85);
+    height: 52px;
+    width: 154px;
+    border-radius: 0;
+}
+.txt{
+    color: rgb(255, 255, 255);
+font-family: 'poppins';
+font-size: 12px;
+font-weight: 700;
+}
+.row {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.head1{
+    font-family: 'Poppins', Arial, sans-serif;
+font-size: 30px;
+font-weight: 700;
+}
+.mb-4{
+    color: rgb(153, 153, 153);
+    font-family: 'Poppins', Arial, sans-serif;
+font-size: 16px;
+font-weight: 400;
+}
+.bd-head{
+    font-family: 'Poppins', Arial, sans-serif;
+font-size: 13px;
+font-weight: 700;
+}
+.card {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    padding-left: 5vh;
+    border: none;
+}
+.scm-title{
+    margin-top: 2vh;
+    font-family: 'Poppins', Arial, sans-serif;
+font-size: 20px;
+font-weight: 400;
+}
+.head{
+    padding: 70px 0;
+    text-align: center;
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 40px;
+   
+}
+.mb-3{
+ border: none;
+ border-bottom: 1px solid rgba(0,0,0,.1);
+ font-family: 'poppins';
+ color: rgb(153, 153, 153);
+ font-size: 14px;
+ padding: 0;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }

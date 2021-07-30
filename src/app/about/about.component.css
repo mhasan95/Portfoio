@@ -1,0 +1,88 @@
+.head{
+    padding: 70px 0;
+    text-align: center;
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 40px;
+   
+}
+.container{
+    background-color: rgb(248, 248, 248);
+}
+.card {
+    height: 20vh;
+    padding: 70px 0;
+    text-align: center;
+border: none;
+}
+.txt{
+    color: rgb(213, 196, 85);
+font-size: 40px;
+font-weight: 700;
+font-family: 'poppins';
+}
+.txt-btn{
+    color: rgb(255, 255, 255);
+    font-family: 'poppins';
+    font-size: 12px;
+    font-weight: 700;
+}
+.about-txt{
+    font-size: 13px;
+font-weight: 700;
+color: rgb(213, 196, 85);
+margin-top: 2vh;
+font-family: 'Poppins';
+}
+.about1-txt{
+    margin-top: 2vh;
+    font-size: 40px;
+font-weight: 600;
+line-height: 5vh;
+font-family: 'Poppins';
+
+display: block;
+}
+.para{
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    color: rgb(153, 153, 153);
+    font-size: 16px;
+font-weight: 400;
+display: block;
+font-family: 'Poppins';
+
+}
+.label{
+    font-size: 14px;
+font-weight: 600;
+margin-bottom: 2vh;
+}
+.data{
+    color: rgb(213, 196, 85);
+    font-size: 14px;
+font-weight: 600;
+margin-bottom: 2vh;
+}
+.cd1button{
+    background: rgb(213, 196, 85);
+    height: 52px;
+    width: 154px;
+    border-radius: 0;
+}
+.dt{
+    color: rgb(34, 34, 34);
+   font-size:  16px;
+font-weight: 400;
+font-family: 'Poppins';
+}
+.card{ 
+    border-radius: 5%;
+}
+.lbl-progress{
+    font-size: 14px;
+    font-weight: 500;
+}
+.progress-bar{
+    background-color: rgb(213, 196, 85);
+}
