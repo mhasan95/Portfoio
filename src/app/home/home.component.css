@@ -8,6 +8,13 @@
   display: table-cell;
   vertical-align: middle;
 }
+.box-btn{
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  float: left;
+}
+.box-btn1{
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
 #container2 {
   color: white;
   background: #ffbd17;

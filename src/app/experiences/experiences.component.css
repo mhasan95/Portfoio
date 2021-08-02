@@ -43,3 +43,14 @@ font-weight: 400;
     font-size: 40px;
    
 }
+@keyframes example {
+    from {top: 200px;}
+    to {top: 0px;}
+  }
+  .container{
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;  
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+  }

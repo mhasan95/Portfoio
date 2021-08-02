@@ -1,8 +1,24 @@
 .cd1button{
     background: rgb(213, 196, 85);
-    height: 52px;
-    width: 154px;
     border-radius: 0;
+    width: 185.4px;
+    height: 53px;
+    margin: 0 auto;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+.box-btn{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    float: left;
+  }
+.txt-btn{
+    
+    color: rgb(255, 255, 255);
+    font-family: 'poppins';
+    font-size: 12px;
+    font-weight: 700;
+  
 }
 .txt{
     color: rgb(255, 255, 255);
@@ -65,4 +81,27 @@ font-weight: 400;
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
+    position: relative;
+    height: calc(100vh - 4em - 64px);
+
+  }
+  input{
+      border: none;
+  }
+  textarea{
+    border: none;
+  }
+  agm-map {
+    height: 300px;
+  }
+  @keyframes example {
+    from {top: 200px;}
+    to {top: 0px;}
+  }
+  .container{
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;  
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
   }

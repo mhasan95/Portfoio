@@ -27,7 +27,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserAnimationsModule,
     DragDropModule,
     FormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
     
   ],
   providers: [],
