@@ -35,14 +35,13 @@
             type="message" class="form-control" id="subject" placeholder="Your Message"></textarea>
           </div>
         <div class="box-btn mb-3">
-          <a href="" class="btn cd1button">
-              <span class="txt-btn">MORE ABOUT ME</span>
-          </a>
+          <button href="" class="btn cd1button submit" [disabled]="isLoading" type="submit">
+              <span class="txt-btn">Submit</span>
+          </button>
           </div>
-          <button [disabled]="isLoading" class="submit" type="submit">Submit</button>
           <input [formControl]="honeypot" class="hidden" type="text" />
           <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
-            <span>{{responseMessage}}</span>
+            <span class="mb-4">{{responseMessage}}</span>
           </div>
       </form>
      <div class="row"> 
