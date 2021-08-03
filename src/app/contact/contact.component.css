@@ -27,7 +27,7 @@ font-size: 12px;
 font-weight: 700;
 }
 .row {
-    margin-top: 1vh;
+    margin-top: 6vh;
     margin-bottom: 1vh;
 }
 .head1{
@@ -54,6 +54,7 @@ font-weight: 700;
 }
 .scm-title{
     margin-top: 2vh;
+    margin-bottom: 2vh;
     font-family: 'Poppins', Arial, sans-serif;
 font-size: 20px;
 font-weight: 400;

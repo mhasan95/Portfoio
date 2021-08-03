@@ -26,9 +26,9 @@ animateValue(obj: any, start: number, end: number, duration: number) {
 
   ngOnInit(): void {
     const obj1 = document.getElementById("value1");
-    this.animateValue(obj1, 0, 150, 3000);
+    this.animateValue(obj1, 0, 10, 3000);
     const obj2 = document.getElementById("value2");
-    this.animateValue(obj2, 0, 100, 3000);
+    this.animateValue(obj2, 0, 50, 3000);
     const obj3 = document.getElementById("value3");
     this.animateValue(obj3, 0, 500, 3000);
     const obj4 = document.getElementById("value4");
