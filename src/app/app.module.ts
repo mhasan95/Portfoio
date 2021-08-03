@@ -11,6 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { AboutComponent } from './about/about.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     DragDropModule,
     FormsModule,
     FontAwesomeModule,
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
   providers: [],

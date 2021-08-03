@@ -20,23 +20,29 @@
             <span class="mb-4">+353-833815151</span>
         </div>
     </div>
-    <form>
+    <form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
         <div class="mb-3">
-          <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Name">
+          <input type="name"  [formControl]="name" required class="form-control" id="name" aria-describedby="name" placeholder="Name">
         </div>
         <div class="mb-3">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+            <input type="email"  [formControl]="email" placeholder="email@example.com" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
           </div>
           <div class="mb-3">
             <input type="subject" class="form-control" id="subject" aria-describedby="subject" placeholder="Subject">
           </div>
           <div class="mb-3">
-            <textarea type="message" class="form-control" id="subject" aria-describedby="message" placeholder="Your Message"></textarea>
+            <textarea [formControl]="message" maxlength="256" placeholder="I'm interested in..." required
+            type="message" class="form-control" id="subject" placeholder="Your Message"></textarea>
           </div>
         <div class="box-btn mb-3">
           <a href="" class="btn cd1button">
               <span class="txt-btn">MORE ABOUT ME</span>
           </a>
+          </div>
+          <button [disabled]="isLoading" class="submit" type="submit">Submit</button>
+          <input [formControl]="honeypot" class="hidden" type="text" />
+          <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
+            <span>{{responseMessage}}</span>
           </div>
       </form>
      <div class="row"> 
@@ -50,7 +56,7 @@
    <div id="map"></div>
   </div>
 </div>
-<script>
+<!-- <script>
     function initMap() {
      // The location of Uluru
      const uluru = { lat: 53.33982, lng: -6.27141 };
@@ -64,19 +70,4 @@
        position: uluru,
        map: map,
      });
-   }</script> 
-
-
-<!-- <form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
-  Name
-  <input *ngIf="form.name.errors?.required" [formControl]="name" required>
-  Email
-  <input [formControl]="email" placeholder="email@example.com" required>
-  Message
-  <textarea [formControl]="message" maxlength="256" placeholder="I'm interested in..." required></textarea>
-  <button [disabled]="isLoading" class="submit" type="submit">Submit</button>
-  <input [formControl]="honeypot" class="hidden" type="text" />
-  <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
-    <span>{{responseMessage}}</span>
-  </div>
-</form> -->
+   }</script> -->
