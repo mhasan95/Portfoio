@@ -1,16 +1,37 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , ViewChild , AfterContentInit} from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+/// <reference types="@types/googlemaps" />
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent implements OnInit  {
+  @ViewChild('gmap') gmapElement: any;
+  map: google.maps.Map;
 
   ngOnInit(): void {
+
+    const mapProp = {
+      center: new google.maps.LatLng(51.6404, -1.38464),
+      zoom: 10,
+      mapTypeId: google.maps.MapTypeId.ROADMAP  // or Satellite
+  };
+  setTimeout(()=>{
+    this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp);
+    var marker = new google.maps.Marker({ position: mapProp.center });
+    marker.setMap(this.map);
+
+  },1000)
+   
+ 
+   
   }
+  ngAfterContentInit(): void {
+ 
+ }
 
   //maaz
   //https://script.google.com/macros/s/AKfycbxWgbhzcp0_-lMbH7vF5O4OSsXwHHNm4LVOwPcAtgzyYlG1icP34cHpbn-5KjAzyYTJnQ/exec
@@ -33,6 +54,20 @@ export class ContactComponent implements OnInit {
       message: this.message,
       honeypot: this.honeypot
     });
+
+  //   const uluru = { lat: 53.33982, lng: -6.27141 };
+  //   // The map, centered at Uluru
+  //   const map = new google.maps.Map(document.getElementById("map"), {
+  //     zoom: 15,
+  //     center: uluru,
+  //   });
+  //   // The marker, positioned at Uluru
+  //   const marker = new google.maps.Marker({
+  //     position: uluru,
+  //     map: map,
+
+    
+  // })
   }
  
 
